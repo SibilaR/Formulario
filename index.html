@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Satisfaction Survey Form</title> 
+  </head>
+  <body>
+    <h1 id="title"> Satisfaction Survey Form</h1>
+    <p id="description">Thank you for purchasing our service, we want to hear from you!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your Name" required/></label>
+        <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label for="number" id="number-label">Age: <input id="number" type="number" min="18" max="120" placeholder="Enter your Age" required/></label>
+        </fieldset>
+        <fieldset>
+        <legend>Is this your first time hiring our service?</legend>
+        <select id="dropdown" required>
+          <option value="">Select</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+        </fieldset>
+        <fieldset>
+        <legend name="experience">Their experience was: (required)</legend>
+        <label><input type="radio" name="account-type" value="excellent" class="inline" checked/> Excellent</label>
+        <label><input type="radio" name="account-type" value="good"class="inline" /> Good</label>
+        <label><input type="radio" name="account-type" value="fair" class="inline"/> Fair</label>
+        <label><input type="radio" name="account-type" value="poor" class="inline" /> Poor</label>
+        </fieldset>
+        <fieldset>
+          <legend>Any comments or suggestions?</legend>
+          <textarea placeholder="Leave your comment or suggestion..." rows="5" cols="30"></textarea>
+        </fieldset>
+        <label for="newsletters"><input type="checkbox" value="newsletters"class="inline" /> I want to receive daily Newsletters</label>
+        <label for="terms-and-conditions"><input type="checkbox" value="conditions" class="inline"/> I accept the terms and conditions</label>
+        <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
